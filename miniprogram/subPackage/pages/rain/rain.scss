@@ -1,0 +1,19 @@
+/* subPackage/pages/rain/rain.wxss */
+.container {
+  width: 100%;
+  padding: 0;
+}
+.analyse{
+  font-size: medium;
+  color: rgb(94, 94, 94);
+  padding: 10px;
+  padding-top: 0;
+  margin-bottom: 10px;
+  .text{
+    font-weight: 600;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 2px 10px;
+    float: right;
+  }
+}

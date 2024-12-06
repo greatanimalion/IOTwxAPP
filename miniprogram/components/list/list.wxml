@@ -1,0 +1,9 @@
+<text class="history">传感器历史数据</text>
+<view class="ul">
+  <view class="ul-item">
+    <text>索引</text><text>值</text><text>更新时间</text>
+  </view>
+  <view wx:for="{{list}}" class="ul-item" wx:key="index">
+    <text>{{index+1}}</text><text>{{item.value}}</text><text>{{item.time}}</text>
+  </view>
+</view>

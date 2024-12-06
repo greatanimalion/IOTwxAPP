@@ -1,0 +1,17 @@
+<!--subPackages/temp/temp.wxml-->
+<view class="block">
+  <t-navbar
+    t-class-placeholder="t-navbar-placeholder"
+    t-class-content="t-navbar-content"
+    class="block"
+    title="近期降雨量变化"
+    left-arrow
+  />
+</view>
+
+<view class="container">
+  <text class="title">仅展示传感器收集近8次数据</text>
+  <ec-canvas id="mychart-dom-bar" style="width: 100%; height: 300px;" canvas-id="echart-pie" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<my-list list="{{list}}"></my-list>

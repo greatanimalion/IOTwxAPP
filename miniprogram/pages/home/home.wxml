@@ -1,0 +1,62 @@
+<!--pages/home/home.wxml-->
+<navigation-bar title="河南科技学院" back="{{false}}"></navigation-bar>
+<view class="refresh">
+  <t-button variant="text" bind:tap="getRefreshTime">
+    <t-icon name="refresh" size="48rpx" data-name="refresh" />
+    <text>刷新</text>
+  </t-button>
+  <text class="refresh-time">上次刷新时间:{{refreshTime}}</text>
+</view>
+
+<view class="weather">
+  <view class="w-title">
+    <view class="i">
+      <t-icon name="sunny" size="100rpx" style="color: rgb(255, 115, 0);" />
+    </view>
+    <view class="desc">
+      <view>新乡-天气：{{weather}}</view>
+      <view>当前气温度：{{temp}}°</view>
+    </view>
+  </view>
+  <view class="wave"></view>
+</view>
+
+<view class="iconView">
+  <view class="icon" bind:tap="navTo" data-path="/subPackage/pages/temp/temp">
+    <image src="../../static/温度.svg" mode="scaleToFill" />
+    <view class="desc">
+      <view class=".label">温度</view>
+      <view class="value">
+        {{tem}}°C
+      </view>
+    </view>
+  </view>
+  <view class="icon" bind:tap="navTo" data-path="/subPackage/pages/hum/hum">
+    <image src="../../static/湿度.svg" mode="scaleToFill" />
+    <view class="desc">
+      <view class=".label">湿度</view>
+      <view class="value">
+        {{hum}}%
+      </view>
+    </view>
+  </view>
+  <view class="icon" bind:tap="navTo" data-path="/subPackage/pages/soildHum/soildHum">
+    <image src="../../static/土壤湿度.svg" mode="scaleToFill" />
+    <view class="desc">
+      <view class=".label">土壤湿度</view>
+      <view class="value">
+        {{soil}}%
+      </view>
+    </view>
+  </view>
+  <view class="icon" bind:tap="navTo" data-path="/subPackage/pages/rain/rain">
+    <image src="../../static/降雨量.svg" mode="scaleToFill" />
+    <view class="desc">
+      <view class=".label">降雨量</view>
+      <view class="value">
+        {{rain}}%
+      </view>
+    </view>
+  </view>
+
+</view>

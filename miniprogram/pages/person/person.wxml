@@ -1,0 +1,47 @@
+<!--pages/person/person.wxml-->
+<navigation-bar title="小组信息" back="{{false}}"></navigation-bar>
+<t-divider content="物联223 一组小组成员" align="left" />
+<view class="intro">
+  <text>谢亚宁</text>
+  <text>许琳</text>
+  <text>孙昊龙</text>
+  <text>李彬</text>
+</view>
+<t-divider content="任务分工" align="left" />
+<view class="user">
+  <t-avatar class="avatar-example" shape="round" icon="user" />
+  <view class="userInfor">
+    <view class="name">谢亚宁 <text class="sex">男</text></view>
+    <view>
+      主要工作：负责单片机的主要实时与实验
+    </view>
+  </view>
+</view>
+<view class="user">
+  <t-avatar class="avatar-example" shape="round" icon="user" />
+  <view class="userInfor">
+    <view class="name">许琳<text class="sexW">女</text></view>
+    <view>
+      主要工作：负责单片机的主要实时与实验
+    </view>
+  </view>
+</view>
+<view class="user">
+  <t-avatar class="avatar-example" shape="round" icon="user" />
+  <view class="userInfor">
+    <view class="name">孙昊龙<text class="sex">男</text></view>
+    <view>
+      主要工作：负责单片机的主要实时与实验
+    </view>
+  </view>
+</view>
+<view class="user">
+  <t-avatar class="avatar-example" shape="round" icon="user" />
+  <view class="userInfor">
+    <view class="name">李彬<text class="sex">男</text></view>
+    <view>
+      主要工作：负责微信小程序开发与UI设计
+    </view>
+  </view>
+</view>
+<view style="height: 80px;"></view>

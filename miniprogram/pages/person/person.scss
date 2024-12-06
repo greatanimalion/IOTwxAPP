@@ -1,0 +1,52 @@
+/* pages/person/person.wxss */
+.intro{
+  display: flex;
+  justify-content: space-around;
+  text{
+    font-weight: 600;
+    padding:5px  10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: '仿宋';
+    color: rgb(121, 121, 121);
+    font-size:large;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+.user{
+  margin: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+  .userInfor{
+    view{
+      padding-left:10px;
+      font-size: x-small;
+      color: rgb(141, 141, 141);
+    }
+    .name{
+      font-weight: 600;
+      font-size: medium;
+      margin-bottom: 5px;
+    }
+    .sex{
+      font-size: x-small;
+      font-weight: lighter;
+      padding:1px 5px;
+      background-color: rgb(218, 218, 255);
+      color: rgb(98, 98, 255);
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+    .sexW{
+      font-size: x-small;
+      font-weight: lighter;
+      padding:1px 5px;
+      background-color: rgb(255, 218, 252);
+      color: rgb(255, 98, 234);
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+  }
+}
